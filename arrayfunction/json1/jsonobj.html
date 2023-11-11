@@ -14,6 +14,15 @@ for (const x in myObj) {
   text += x + ", ";
 }
 document.getElementById("demo").innerHTML = text;
+const mJSON = '{"name":"John", "age":30, "cars":["Ford", "BMW", "Fiat"]}';
+const mObj = JSON.parse(mJSON);
+
+let text = "";
+for (let i = 0; i < mObj.cars.length; i++) {
+  text += mObj.cars[i] + ", ";
+}
+
+document.getElementById("demo").innerHTML = text;
 </script>
 
 </body>
