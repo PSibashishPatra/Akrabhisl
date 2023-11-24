@@ -4,16 +4,17 @@
 
 <h2>Looping Object Properties</h2>
 <p id="demo"></p>
+<p id="nemo"></p>
 
 <script>
 const myJSON = '{"name":"John", "age":30, "car":null}';
 const myObj = JSON.parse(myJSON);
 
-let text = "";
-for (const x in myObj) {
-  text += x + ", ";
+let test = "";
+for (let i = 0; i < mObj.car; i++) {
+  test += x + ", ";
 }
-document.getElementById("demo").innerHTML = text;
+document.getElementById("nemo").innerHTML = test;
 const mJSON = '{"name":"John", "age":30, "cars":["Ford", "BMW", "Fiat"]}';
 const mObj = JSON.parse(mJSON);
 
